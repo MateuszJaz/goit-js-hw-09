@@ -46,6 +46,7 @@ img {
 }
 
 .value {
+  width: 68px;
   border: 1px solid #2121213a;
   border-radius: 4px;
   margin: 15px;
@@ -55,6 +56,7 @@ img {
   background-color: #003fa436;
   color: white;
   text-shadow: 1px 1px #003fa4;
+
 }
 
 .label {

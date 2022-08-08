@@ -2,6 +2,7 @@ import Notiflix from 'notiflix';
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 
+const inputField = document.querySelector('input');
 const startBtn = document.querySelector('button[data-start]');
 startBtn.disabled = true;
 
@@ -79,6 +80,8 @@ const getDifference = () => {
 
 let timerId = null;
 startBtn.addEventListener('click', () => {
+  inputField.style.visibility = 'hidden'; // visibility after start
+  startBtn.style.visibility = 'hidden'; //
   startBtn.disabled = true;
   getDifference();
   timerId = setInterval(() => {

@@ -17,13 +17,14 @@ img {
   max-width: 100%;
 }
 
-.dateTimePicker {
+#dateTimePicker {
   width: fit-content;
   border: 0.1px solid #2121213a;
   border-radius: 5px;
   margin: 10px auto;
   padding: 15px;
   display: flex;
+  transition: width 2s, height 2s, visibility 1s, transform 2s;
 }
 
 .timer {
@@ -47,19 +48,19 @@ img {
 
 .value {
   width: 68px;
-  border: 1px solid #2121213a;
+  color: #fff;
+  background-color: #00000029;
+  border: 1px solid #0000001a;
   border-radius: 4px;
   margin: 15px;
   padding: 7px;
   font-size: 40px;
-  box-shadow: 1px 0.7px #2121212d;
-  background-color: #003fa436;
-  color: white;
-  text-shadow: 1px 1px #003fa4;
-
+  text-shadow: 0px 1px 2px #000000a6;
 }
 
 .label {
-  display: flex;
   font-variant-caps: all-small-caps;
+  display: flex;
+  font-weight: 200;
+  font-size: 18px;
 }

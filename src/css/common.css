@@ -16,3 +16,48 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.dateTimePicker {
+  width: fit-content;
+  border: 0.1px solid #2121213a;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 15px;
+  display: flex;
+}
+
+.timer {
+  border: 1px solid #2121213a;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 1px 0.7px #2121212d;
+  padding: 10px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.field {
+
+  border-radius: 5px;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  border: 1px solid #2121213a;
+  border-radius: 4px;
+  margin: 15px;
+  padding: 7px;
+  font-size: 40px;
+  box-shadow: 1px 0.7px #2121212d;
+  background-color: #003fa436;
+  color: white;
+  text-shadow: 1px 1px #003fa4;
+}
+
+.label {
+  display: flex;
+  font-variant-caps: all-small-caps;
+}

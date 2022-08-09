@@ -5,6 +5,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 const inputField = document.querySelector('input');
 const startBtn = document.querySelector('button[data-start]');
 startBtn.disabled = true;
+const counterValue = document.querySelectorAll('.value');
 
 const convertMs = ms => {
   // Number of milliseconds per unit of time//
@@ -63,6 +64,7 @@ const getDifference = () => {
   const difference = selectedDate.getTime() - todayTime;
 
   if (difference < 1000) {
+    counterValue.forEach(element => (element.style.color = 'red'));
     clearInterval(timerId);
   }
   const resultDays = convertMs(difference).days;
